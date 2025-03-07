@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management - Help Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Hospital Management - Help Request Form</h2>
+        <p>Help from</p>
+
+        <form action="#" method="POST" class="help-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="issue-type">Issue Type:</label>
+            <select id="issue-type" name="issue-type" required>
+                <option value="" disabled selected>Select issue type</option>
+                <option value="technical">Technical Issue</option>
+                <option value="medical">Medical Assistance</option>
+                <option value="general">General Inquiry</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your issue or request..." required></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+
+</body>
+</html>

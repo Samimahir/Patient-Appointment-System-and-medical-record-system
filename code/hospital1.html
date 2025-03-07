@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hospital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #09bb2f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #03c14f;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #f90626;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0e8528;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our hospital has been providing quality healthcare services to the community for over 20 years. We are dedicated to improving the health and well-being of our patients through compassionate care and advanced medical technology.</p>
+            <p>Our team of experienced healthcare professionals is committed to delivering personalized care to each patient. We offer a wide range of services, including emergency care, surgery, maternity care, and more.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Emergency Care</li>
+                <li>Surgery</li>
+                <li>Maternity Care</li>
+                <li>Pediatrics</li>
+                <li>Cardiology</li>
+                <li>Orthopedics</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to schedule an appointment, please contact us:</p>
+            <button id="contactButton">Contact Us</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactButton').addEventListener('click', function() {
+            alert('Thank you for your interest! Please call us at (123) 456-7890 or email us at contact@ourhospital.com.');
+        });
+    </script>
+</body>
+</html>

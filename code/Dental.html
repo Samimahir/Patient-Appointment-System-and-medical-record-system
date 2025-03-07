@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Medicine Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 50%, #d9e4ec 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .gallery-item p {
+            text-align: center;
+            padding: 0 15px 15px;
+            color: #666;
+        }
+
+        .add-image-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 20px auto;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .add-image-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+       
+        @media (max-width: 600px) {
+            .gallery-item {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+
+       
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow
+    </style>
+</head>
+
+<header>
+    <h1> Dental Care medicines </h1>
+    <h2> Are available here.....</h2>
+</header>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="https://5.imimg.com/data5/ET/OS/EA/SELLER-4168731/zinc-oxide-dental-powder-250x250.jpg" alt="Medicine 1">
+        <h3> Zinc Oxide Dental Powder </h3>
+        <p>  Arsenic free, extra pure zinc powder for temporary dressings. Forms a sedative dressing or lining under non composite resin. 
+             Product Packaging: 110g in Plastic Jar Composition: Not Available. </p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://5.imimg.com/data5/WN/JS/CH/SELLER-12393035/dr-denti-tooth-fil-500x500.jpg" alt="Medicine 2">
+        <h3> Tooth Fil </h3>
+        <p> This is a ready-to-use temporary tooth filling material based upon zinc oxide putty that is presented in a pre-filled plastic syringe. 
+            The 3g pack contains sufficient material for 10 standard fillings and comes complete with a spatula. </p>
+    </div>
+     <div class="gallery-item">
+        <img src="https://5.imimg.com/data5/IX/VJ/NU/SELLER-4464038/calcium-hydroxide-paste-500x500.jpg" alt="Medicine 2">
+        <h3> Atorvastatin 10mg and aspirin 75mg</h3>
+        <p>Calcium Hydroxide Paste Indication :Pulp Sealing ,Temporary root canal Fillings ,Intermediate intra-Canal treatment and dressing</p>
+    </div>
+    
+    
+    <div class="gallery-item">
+        <img src="https://i.ebayimg.com/images/g/D8oAAOSw-HJmenar/s-l1600.webp" alt="Medicine 2">
+        <h3> Lignocaine and adrenaline injection I.P</h3>
+        <p>It seems like you're referring to a dental solution, possibly a disinfectant or a cleaning agent, with a concentration of 2% and a dilution ratio of 1 in 200,000. 
+            .</p>
+    </div>
+    
+    
+     
+    <div class="gallery-item">
+        <img src="https://greencrossindia.com/image/product/gardent-f-toothpaste20230204122831.jpg" alt="Medicine 2">
+        <h3> GARDENT-F Toothpaste </h3>
+        <p> GARDENT-F Toothpaste is a medicated toothpaste designed to help with sensitive teeth and prevent dental cavities 
+            It contains the following active ingredients: Sodium Monofluorophosphate (0.7% w/w) ,Triclosan (0.3% w/w) ,Potassium Nitrate (5% w/w).</p>
+    </div>
+    
+    
+    <div class="gallery-item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/5/307024254/AI/XG/FD/141592133/dental-herbal-tabet-500x500.jpg" alt="Medicine 2">
+        <h3> Dental Herbal tabet </h3>
+        <p> We know that in earlier times, people used to use Neem or Babul wood sticks to clean their teeth, which used to last for 10 or 20 minutes, 
+             which gave maximum benefits to our mouth. Nowadays our brushing time is hardly 5 minutes..</p>
+    </div>
+    
+    
+    
+    
+</div>
+   </body>

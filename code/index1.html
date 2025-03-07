@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine management website</title>
+
+    <script src="https://kit.fontawesome.com/c1df782baf.js"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .logo img {
+            height: 50px; /* Adjust as necessary */
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+        }
+
+        .sub-menu {
+            display: none; /* Hide by default */
+            position: absolute;
+            background-color: white; /* Change as needed */
+            border: 1px solid #ddd; /* Optional border */
+            z-index: 1000;
+        }
+
+        .nav-item:hover .sub-menu {
+            display: block; /* Show on hover */
+        }
+
+        .sub-menu a {
+            display: block; /* Stack sub-menu items */
+            padding: 10px; /* Add padding */
+            text-decoration: none; /* Remove underline */
+            color: black; /* Change text color */
+        }
+
+        .right-icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: #007BFF; /* Button color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #menu-bars {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="images/logo3.png" alt="Logo"></div>
+
+    <nav class="navbar">
+        <div class="nav-item">
+            <a href="#Home">Home</a>
+            <div class="sub-menu">
+                <a href="#Home-1">Home</a>
+               
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="#About">About</a>
+            <div class="sub-menu">
+                <a href="hospital1.html">About'us</a>
+  
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="#service">Service</a>
+            <div class="sub-menu">
+                <a href="#service-1">Service</a>
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="#Gallery">Gallery</a>
+            <div class="sub-menu">
+                <a href="hospital.html">hospital</a>
+                <a href="#Gallery-1">Doctor's</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="#Medical">Medical</a>
+            <div class="sub-menu">
+                <a href="cancer.html">CANCER MEDICINES</a>
+                <a href="organtransplant.html">ORAGAN TRANSPLANT</a>
+                <a href="Dental.html">Dental Medicines</a>
+                <a href="Generalmedicines.html">General Medicine</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="#Contact">Contact</a>
+            <div class="sub-menu">
+                <a href="form.html">Customer-care</a>
+                <a href="help.html">help-Form</a>
+                <a href="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/11/12/05/20241112055831-4FPW6FR3.json">chatbot with helps</a>
+
+            
+            </div>
+        </div>
+    </nav>
+
+    <div class="right-icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <button class="btn" onclick="goToHealthcare()">Healthcare</button>
+    </div>
+    <div class="right-icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <button class="btn" onclick="goToDoctor()">Doctor</button>
+    </div>
+    
+    <script>
+        function goToHealthcare() {
+            window.location.href = 'http://localhost/sami1/login_form2.php'; // Replace with the URL of the healthcare page
+        }
+    
+        function goToDoctor() {
+            window.location.href = 'http://localhost/sami1/login_form.php'; // Replace with the URL of the doctor page
+        }
+    </script>
+    
+    
+</header>
+
+
+    <!-- header section ended -->
+
+    <!-- Home section started -->
+
+        <div class="main-home">
+
+            <div class="home">
+                <div class="home-left-content">
+                    <span>welcome to Medicine management</span>
+                    <h2>We take care our<br> Patients Healths</h2>
+                    <p class="lorem">Health is a state of physical, mental, and social well-being,
+                         not merely the absence of disease or infirmity. It encompasses the ability to live a balanced, active, and fulfilling life.</p>
+                
+                        <div class="home-btn">
+                            <a href="">Read More</a>
+                            <a class="homebtnsec" href="">Appointment</a>
+                        </div>
+                        
+                    </div>
+
+                <div class="home-right-content">
+                     <img src="images/hero2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="technology">
+            <div class="main-technology">
+                
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-tr-hands-heart"></i>
+                    <h2><a href="https://www.compliancequest.com/quality-and-safety/" style="text-decoration: none; color: inherit;">Quality & Safety</h2></a>
+                    <p>Our Delmont hospital utilizes state of the art technology and employs a team of true experts.</p>
+                </div>
+
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-rr-doctor"></i>
+                  <h2><a href="https://www.ddregpharma.com/what-is-a-healthcare-professional" style="text-decoration: none; color: inherit;">healthcare professionals</h2></a>
+                    <p>Our Delmont hospital utilizes state of the art technology and employs a team of true experts.</p>
+                </div>
+
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-tr-user-md"></i>
+                    <h2><a href="https://www.cooperhealth.org/about-us/quality-and-patient-safety" style="text-decoration: none; color: inherit;">Quality & Safety</h2></a>
+                    <p>Our Delmont hospital utilizes state of the art technology and employs a team of true experts.</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- home section ends -->
+
+    <!-- About us section started -->
+<div class="main-about">
+
+    <div class="about-heading">About Us</div>
+
+    <div class="inner-main-about">
+        <div class="about-inner-content-left">
+            <img src="https://images.rawpixel.com/image_png_450/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8yOV9waG90b19vZl9hZHVsdF9tYWxlX2luZGlhbl9kb2N0b3Jfc21pbGluZ19jb183ZTdhYzdmNC0xMjU0LTRkNjAtYmI2OS0zMTk3YTliZWRkZjIucG5n.png" alt="A welcoming and modern dental clinic" class="about-image">
+        </div>
+
+        <div class="about-inner-content">
+            <div class="about-right-content">
+                <h2>Setting New Standards in Research and Clinical Care</h2>
+                <p>At our clinic, we are committed to providing comprehensive medical services to ensure that every individual has the opportunity to receive high-quality healthcare. Our mission is to create a welcoming environment where patients feel valued and cared for.</p>
+                <p class="aboutsec-content">
+                    Our facility has evolved into a world-class center for the treatment of tooth loss, dental aesthetics, and advanced restorative dentistry. With over 30 years of quality training and experience, we are proud to be among the most qualified implant providers in Australia. Our team of skilled professionals utilizes the latest technology and techniques to deliver exceptional results tailored to each patient's unique needs.
+                </p>
+                <p>
+                    We believe that patient education is vital to successful treatment outcomes. Therefore, we take the time to explain every procedure, answer questions, and address any concerns you may have. Our dedicated staff is here to support you every step of the way, ensuring a comfortable and stress-free experience.
+                </p>
+                <p>
+                    Whether you are seeking routine dental care, cosmetic enhancements, or complex restorative procedures, we are here to help you achieve optimal oral health and a beautiful smile. Join us on this journey towards better health, and let us show you the difference that compassionate, quality care can make.
+                </p>
+                <button class="aboutbtn">Read More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- About us section ends -->
+ <!-- our doctors -->
+
+       <div class="main-doctors">
+    <div class="doctors-heading">
+        <h2>Our Doctors</h2>
+    </div>
+
+    <div class="main-inner-doctor">
+        <div class="doc-poster">
+            <div class="doc-icons">
+                <i class="fa-solid fa-share" title="Share"></i>
+                <i class="fa-solid fa-eye" title="View Profile"></i>
+                <i class="fa-solid fa-heart" title="Favorite"></i>
+            </div>
+            <img src="https://shinonglobal.com/wp-content/uploads/2022/05/Dr.-Vinod-Raina.jpg
+            " alt="Dr. Alice Smith - Dentist" class="doctor-image">
+            
+
+
+            <div class="doc-details">
+                <h3>Dr. Vinod Raina</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/alicesmith" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alicesmith" target="_blank" aria-label="Instagram Profile">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9584568122" target="_blank" aria-label="WhatsApp Profile">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://meet.google.com/your-meeting-code" target="_blank" aria-label="Google Meet Profile">
+                         <i class="fa fa-meetup" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="doc-poster">
+            <div class="doc-icons">
+                <i class="fa-solid fa-share" title="Share"></i>
+                <i class="fa-solid fa-eye" title="View Profile"></i>
+                <i class="fa-solid fa-heart" title="Favorite"></i>
+            </div>
+            <img src="https://www.fortishealthcare.com/drupal-data/doctors/dr-vivek-vij-6729.jpg" alt="Dr. Vivek Vij - Orthodontist" class="doctor-image">
+            <div class="doc-details">
+                <h3>Dr. Vivek Vij</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alicesmith" target="_blank" aria-label="Instagram Profile">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9584568122" target="_blank" aria-label="WhatsApp Profile">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://meet.google.com/your-meeting-code" target="_blank" aria-label="Google Meet Profile">
+                        <i class="fa fa-meetup" aria-hidden="true"></i>
+                   </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="doc-poster">
+            <div class="doc-icons">
+                <i class="fa-solid fa-share" title="Share"></i>
+                <i class="fa-solid fa-eye" title="View Profile"></i>
+                <i class="fa-solid fa-heart" title="Favorite"></i>
+            </div>
+            <img src="https://www.edhacare.com/storage/doctors/1695810466dr-riddhi-rathi-seth.png" alt="Dr. Carol Lee - Pediatric Dentist" class="doctor-image">
+            <div class="doc-details">
+                <h3>Dr. Riddhi Rathi Seth</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/carolleedentist" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/carolleedentist" target="_blank" aria-label="Instagram Profile">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9584568122" target="_blank" aria-label="WhatsApp Profile">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://meet.google.com/your-meeting-code" target="_blank" aria-label="Google Meet Profile">
+                        <i class="fa fa-meetup" aria-hidden="true"></i>
+                   </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="doc-poster">
+            <div class="doc-icons">
+                <i class="fa-solid fa-share" title="Share"></i>
+                <i class="fa-solid fa-eye" title="View Profile"></i>
+                <i class="fa-solid fa-heart" title="Favorite"></i>
+            </div>
+            <img src="https://www.edhacare.com/storage/doctors/1705383494dr-rina-malpani.png" alt="Dr. David Brown - Oral Surgeon" class="doctor-image">
+            <div class="doc-details">
+                <h3>Dr. Rina Malpani</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/davidbrown" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/davidbrown" target="_blank" aria-label="Instagram Profile">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9584568122" target="_blank" aria-label="WhatsApp Profile">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://meet.google.com/your-meeting-code" target="_blank" aria-label="Google Meet Profile">
+                        <i class="fa fa-meetup" aria-hidden="true"></i>
+                   </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="doc-poster">
+            <div class="doc-icons">
+                <i class="fa-solid fa-share" title="Share"></i>
+                <i class="fa-solid fa-eye" title="View Profile"></i>
+                <i class="fa-solid fa-heart" title="Favorite"></i>
+            </div>
+            <img src="https://max-website20-images.s3.ap-south-1.amazonaws.com/1566298915_Dr_Prof_K_N_Srivastava_BLK_Hospital_e176cb8b18.jpg" alt="Dr. Emily White - Cosmetic Dentist" class="doctor-image">
+            <div class="doc-details">
+                <h3>Dr. K.N. Srivastava</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/emilywhite" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/emilywhite" target="_blank" aria-label="Instagram Profile">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9584568122" target="_blank" aria-label="WhatsApp Profile">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://meet.google.com/your-meeting-code" target="_blank" aria-label="Google Meet Profile">
+                        <i class="fa fa-meetup" aria-hidden="true"></i>
+                   </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="doc-poster">
+            <div class="doc-icons">
+                <i class="fa-solid fa-share" title="Share"></i>
+                <i class="fa-solid fa-eye" title="View Profile"></i>
+                <i class="fa-solid fa-heart" title="Favorite"></i>
+            </div>
+            <img src="https://www.edhacare.com/storage/doctors/1698299036dr-ashish-dixit.png" alt="Dr. Frank Green - Periodontist" class="doctor-image">
+            <div class="doc-details">
+                <h3>Dr. Ashish Dixit</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/frankgreen" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/frankgreen" target="_blank" aria-label="Instagram Profile">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9584568122" target="_blank" aria-label="WhatsApp Profile">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://meet.google.com/your-meeting-code" target="_blank" aria-label="Google Meet Profile">
+                        <i class="fa fa-meetup" aria-hidden="true"></i>
+                   </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- our doctors ended -->
+
+    <!-- our services -->
+<div class="our-service" id="service-1">
+    <div class="service-heading">
+        <h2>Our Services</h2>
+    </div>
+
+    <div class="main-services">
+        <div class="inner-services">
+            <div class="service-icon">
+            <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3><a href="https://www.who.int/health-topics/emergency-care#tab=tab_1" style="text-decoration: none; color: inherit;">Emergency Care</a></h3>
+            <p>We provide immediate medical attention to patients in critical conditions, ensuring a quick and effective response.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-regular fa-hospital"></i>
+            </div>
+           <h3> <a href="https://www.definitivehc.com/resources/glossary/inpatient-care" style="text-decoration: none; color: inherit;">
+                Inpatient Services</h3></a>
+            <p>Our facility offers comprehensive inpatient services with round-the-clock care from our dedicated medical staff.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3><a href="https://www.drbhosalekartik.com/why-cardiology-consultation-is-important/" style="text-decoration: none; color: inherit;">Cardiology Consultations</a>
+            </h3>
+            <p>We specialize in heart health with expert consultations and advanced diagnostic procedures.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-solid fa-notes-medical"></i>
+            </div>
+            <h3><a href="https://www.hdfcergo.com/PortalImages/Mailer_Images/01032021/preventive.html" style="text-decoration: none; color: inherit;">Preventive Checkups</h3></a>
+            <p>Regular health checkups are essential for early detection and prevention of diseases.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h3><a href="https://www.starhealth.in/health-insurance/wellness-benefits-by-health-insurance-plans/" style="text-decoration: none; color: inherit;">Wellness Programs</h3></a>
+            <p>Join our wellness programs designed to promote a healthy lifestyle and overall well-being.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3><a href="https://www.justdial.com/Bhopal/Consultant-Physicians/nct-11392759" style="text-decoration: none; color: inherit;">Specialist Consultations</h3></a>
+            <p>Access to a wide range of specialists for personalized medical advice and treatment plans.</p>
+        </div>
+    </div>
+</div>
+
+    <!-- our services ended -->
+
+    <!-- customer review -->
+  <div class="main-review">
+    <section>
+        <div class="review-heading">
+            <h1>Customer Reviews</h1>
+        </div>
+
+        <div class="main-inner-review">
+            <div class="review-inner-content">
+
+                <div class="review-box">
+                    <img src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2023/1/31/1/0HRKBK402_AnthonyMichel_Portrait_10.06.22_0004.jpg.rend.hgtvcom.616.616.suffix/1675198063710.jpeg" alt="Customer Image">
+                    <h2>Michel smith</h2>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <button class="toggle-review">Show Review</button>
+                    <div class="review-text" style="display: none;">
+                        <p>This service exceeded my expectations! The staff was incredibly helpful and attentive throughout my visit.</p>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <img src="data:image/jpeg;base64,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" alt="Customer Image">
+                    <h2>Emily carter</h2>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="toggle-review">Show Review</button>
+                    <div class="review-text" style="display: none;">
+                        <p>Fantastic experience! I received top-notch care and the facilities were clean and welcoming.</p>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <img src="https://media.licdn.com/dms/image/v2/C5103AQGiEeqo4qrRcA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517379191075?e=2147483647&v=beta&t=fbWKhAdPngYoI83aUuw30GPImTeDcE9FpiU1hXs43mA" alt="Customer Image">
+                    <h2>Sarah Johnson</h2>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <button class="toggle-review">Show Review</button>
+                    <div class="review-text" style="display: none;">
+                        <p>Overall a good experience, though I wish the wait time was shorter. The staff was very professional.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+    
+ <!-- customer review -->
+    <!-- Team member -->
+  <div class="main-review">
+    <section>
+        <div class="review-heading">
+            <h1>Our Team</h1>
+        </div>
+
+        <div class="main-inner-review">
+            <div class="review-inner-content"> 
+
+                <!-- Team Member 1 -->
+                <div class="review-box">
+                    <img src="mahir.jpg" alt="Customer Image">
+                    <h2>Mahir Shrivastava</h2>
+                    <div class="review-stars">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/shrivastava.mahir?igsh=MTcwdjB2cXdrYjN5Zw==" target="_blank" aria-label="Instagram Profile">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="toggle-review">Member</button>
+                    <div class="review-text" style="display: none;">
+                        <p></p>
+                    </div>
+                </div>
+
+                 <!-- Team Member 2 -->
+                <div class="review-box">
+                    <img src="raj.jpg" alt="Customer Image">
+                    <h2>Rohit Parmar</h2>
+                    <div class="review-stars">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/rajparmar9584?igsh=MXFqeTYwcmRjc3dmeQ==" target="_blank" aria-label="Instagram Profile">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="toggle-review">Member</button>
+                    <div class="review-text" style="display: none;">
+                        <p></p>
+                    </div>
+                </div>
+
+                 <!-- Team Member 3 -->
+                <div class="review-box">
+                    <img src="hariom.jpg" alt="Customer Image">
+                    <h2>Hariom Verma</h2>
+                    <div class="review-stars">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/hariom.verma_89?igsh=MTcwdjB2cXdrYjN5Zw==" target="_blank" aria-label="Instagram Profile">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="toggle-review">Member</button>
+                    <div class="review-text" style="display: none;">
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+</div>       
+<!-- Team Members ended -->
+   
+
+
+<!-- footer -->
+<div class="main-footer">
+    <div class="footer-inner">
+        <div class="footer-content">
+            <h1>Quick Links</h1>
+            <div class="link">
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <h1>Resources</h1>
+            <div class="link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+                <a href="#">Careers</a>
+                <a href="#">Testimonials</a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <h1>Follow Us</h1>
+            <div class="link">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <h1>Contact Information</h1>
+            <div class="link">
+                <a href="#">Email Us</a>
+                <a href="#">Customer Support</a>
+                <a href="#">Office Locations</a>
+                <a href="#">Schedule a Call</a>
+                <a href="#">Feedback</a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <h1>Subscribe</h1>
+            <div class="link">
+                <a href="#">Newsletter Sign-Up</a>
+                <a href="#">Special Offers</a>
+                <a href="#">Updates</a>
+                <a href="#">Promotions</a>
+                <a href="#">Events</a>
+            </div>
+        </div>
+    </div>
+</div>
+        
+    <!-- footer ended -->
+
+
+    <script src="script.js"></script>
+    <script src="path/to/your/script1.js"></script>
+
+</body>
+</html>

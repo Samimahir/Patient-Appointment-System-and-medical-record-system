@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Medicine Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 50%, #d9e4ec 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .gallery-item p {
+            text-align: center;
+            padding: 0 15px 15px;
+            color: #666;
+        }
+
+        .add-image-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 20px auto;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .add-image-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .gallery-item {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+
+        .form-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cancer Medicines</h1>
+        <h2>Available Here</h2>
+    </header>
+
+    <div class="form-container">
+        <h2>Add New Medicine</h2>
+        <input type="text" id="medicineName" placeholder="Medicine Name" required>
+        <input type="text" id="medicineImage" placeholder="Image URL" required>
+        <textarea id="medicineDescription" placeholder="Description" required></textarea>
+        <button onclick="addMedicine()">Add Medicine</button>
+    </div>
+
+    <div class="gallery-container" id="galleryContainer">
+        <div class="gallery-item">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/11/363288229/MF/JC/YJ/201986431/anti-cancer-medicines-500x500.jpg" alt="Capegard 500mg Anti-Cancer Medicine">
+            <h3>Capegard 500mg</h3>
+            <p>Anticancer drugs are used to treat cancer, including chemotherapy, targeted therapy, immunotherapy, and hormone therapy.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2021/4/RO/QS/BD/16096027/anti-cancer-medicines-500x500.jpg" alt="Erlotinib Tablets 150mg">
+            <h3>Erlotinib Tablets 150mg</h3>
+            <p>These tablets meet pharmaceutical needs worldwide and provide essential treatment options.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/QG/VT/QT/14366937/zoladex-anti-cancer-medicines-500x500.jpg" alt="Zoladex 10.8mg Injection">
+            <h3>Zoladex 10.8mg</h3>
+            <p>MediNex Healthcare supplies high-quality drugs for both domestic and international markets.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/11/CQ/QV/OT/31100217/anti-cancer-injection-500x500.jpg" alt="Fulvestrant Injections">
+            <h3>Fulvestrant Injections</h3>
+            <p>Highly effective anti-cancer injections provided by Arihant Pharma, specializing in life-saving drugs.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://image.shutterstock.com/image-photo/columbus-georgia-usa-09082020-bottle-260nw-1814773826.jpg" alt="Vraylar Capsules">
+            <h3>Vraylar (Cariprazin) Capsules</h3>
+            <p>Prescription capsules for specific cancer treatments, offering advanced options for care.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://img.medscapestatic.com/pi/features/drugdirectory/octupdate/BAX00140.jpg" alt="Oxaliplatin Injection">
+            <h3>Oxaliplatin Injection, USP</h3>
+            <p>Used to treat advanced colon and rectal cancer by slowing or stopping cancer cell growth.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Creative Medicine Gallery</p>
+    </footer>
+
+    <script>
+        function addMedicine() {
+            const name = document.getElementById('medicineName').value;
+            const image = document.getElementById('medicineImage').value;
+            const description = document.getElementById('medicineDescription').value;
+
+            const galleryContainer = document.getElementById('galleryContainer');
+
+            const newItem = document.createElement('div');
+            newItem.className = 'gallery-item';
+            newItem.innerHTML = `
+                <img src="${image}" alt="${name}">
+                <h3>${name}</h3>
+                <p>${description}</p>
+            `;
+
+            galleryContainer.appendChild(newItem);
+
+            // Clear the input fields
+            document.getElementById('medicineName').value = '';
+            document.getElementById('medicineImage').value = '';
+            document.getElementById('medicineDescription').value = '';
+        }
+    </script>
+</body>
+</html>
